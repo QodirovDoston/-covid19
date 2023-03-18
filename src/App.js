@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { addValue, decroment, incrument, reset, value } from "./reducer/countSlice";
+import { decroment, incrument, reset, value } from "./reducer/countSlice";
 
 function App() {
   const [message, setMessage] = useState('');
-console.log(setMessage);
+console.log(message);
   const count = useSelector((state) => state.reducer.count)
 
 
