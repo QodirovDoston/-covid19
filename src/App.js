@@ -4,8 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { decroment, incrument, reset, value } from "./reducer/countSlice";
 
 function App() {
-  const [message, setMessage] = useState('');
-console.log(message);
+  // const [message, setMessage] = useState('');
+// console.log(message);
   const count = useSelector((state) => state.reducer.count)
 
 
