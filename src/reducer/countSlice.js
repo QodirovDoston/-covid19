@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 export const countSlice = createSlice({
     name:"count",
     initialState: {count:0},
@@ -9,17 +8,20 @@ export const countSlice = createSlice({
         },
         decroment:(state)=>{
             state.count -=1
+            console.log(state);
         },
         reset:(state)=>{
-            state.count =1
+            state.count = 0
         },
-        // value:(state)=>{
-        //     state.count
-        // },
-        addValue:(state)=>{
-            state.count += value.state
-        }
+        value:(state, action)=>{
+            state.count +=  action.payload
+        },
     }
 })
-export const {incrument, decroment, reset , value, addValue } = countSlice.actions
+export const {incrument, decroment, reset , value } = countSlice.actions
+
+// export const incrementAsync = (amount) => (dispatch) => {
+//       dispatch(value(amount))
+      
+//   }
 export default countSlice.reducer
