@@ -1,6 +1,9 @@
 body {
   background:url('https://cdn2.vectorstock.com/i/1000x1000/52/81/redux-emblem-on-white-bg-vector-27645281.jpg');
-  background-size: 690px;
+  background-size: 790px;
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
